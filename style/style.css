@@ -1,0 +1,448 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+/*font-family: "Montserrat", serif;
+font-family: "Nunito Sans", serif;*/
+
+html, body {
+    height: 100%;
+    font-family: "Nunito Sans", serif;
+}
+
+.open {
+    display: flex !important;
+}
+
+.container {
+    background-color: #ffff;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-height: 100%;
+    height: auto !important;
+}
+
+header{
+    width: 72%;
+    padding: 20px 370px;
+    background-color: #D3CBC5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo{
+    font-family: "Montserrat", serif;
+    font-weight: bold;
+    padding: 0px 20px;
+}
+
+.logos{
+    font-family: "Montserrat", serif;
+    font-weight: bold;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    font-size: 16px;
+}
+
+.icons{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    transition: 0.5s all;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+footer {
+    height: 100%;
+    padding: 50px 370px;
+    background-color: #D9D9D9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.big_text_footer{
+    font-weight: 400;
+    font-size: 36px;
+}
+
+.text_footer{
+    font-size: 18px;
+    font-weight: 100;
+    color: #5E5E5E;
+}
+
+.text{
+    width: 440px;
+}
+
+main {
+    background-color: #ffff;
+    flex-grow: 1;
+    padding: 20px 370px;
+    margin-top: 80px;
+}
+
+.black-text {
+    color: #555555;
+    display: inline-block;
+    font-size: 22px;
+}
+
+.white-first-letter {
+    color: white;
+    background-color: black;
+    display: inline-block;
+    font-size: 22px;
+}
+
+.product{
+    width: 270px;
+    height: 270px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.26);
+    border-radius: 20px;
+}
+
+.product_card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.4s all;
+}
+
+.product_card:hover{
+    transform: scale(1.1);
+}
+
+.info_product{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.panel{
+    margin-top: -10px;
+    cursor: pointer;
+}
+
+
+.name{
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.price{
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.old_price{
+    font-weight: 600;
+    font-size: 15px;
+    color: #737373;
+    text-decoration: line-through;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.up{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.catalog{
+    display: flex;
+    align-items: center;
+    color: #9A6437;
+    font-size: 16px;
+}
+.new{
+    font-size: 42px;
+}
+.filtr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0px 20px;
+}
+
+.black{
+    color: #ffffff;
+    background-color: #000000;
+}
+
+
+.black:hover{
+    color: #000000;
+    background-color: #ffffff;
+    transition: 0.2s all;
+}
+
+.white:hover{
+    color: #ffffff;
+    background-color: #000000; 
+    transition: 0.2s all;
+}
+
+.one{
+    padding: 10px;
+}
+
+.btn{
+    font-family: "Nunito Sans", serif;
+    color: #737373;
+    background-color: #55555500;
+    border: 1px solid #737373;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: 0.2s all;
+}
+
+.btn:hover{
+    font-family: "Nunito Sans", serif;
+    color: #ffffff;
+    background-color: #737373;
+    border: 1px solid #ffffff;
+}
+
+input{
+    font-family: "Nunito Sans", serif;
+    color: #737373;
+    background-color: #55555500;
+    border: 1px solid #737373;
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: 200px;
+}
+
+.pod{
+    text-decoration: underline;
+}
+
+.burger {
+    display: none;
+    position: relative;
+    z-index: 50;
+    align-items: center;
+    justify-content: flex-end;
+    width: 30px;
+    height: 18px;
+}
+
+.burger span {
+    height: 2px;
+    width: 100%;
+    transform: scale(1);
+    background-color: black;
+}
+
+.burger::before, .burger::after{
+    content: " ";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: black;
+    transition: all 0.3s ease 0s;
+}
+
+.burger::before{top: 0;}
+
+.burger::after{bottom: 0;}
+
+.burger.active span{
+    transform: scale(0);
+}
+
+.burger.active::before {
+    top: 50%;
+    transform: rotate(-45deg)translate(0, -50%);
+}
+
+.burger.active::after {
+    top: 50%;
+    transform: rotate(45deg)translate(0, 50%);
+}
+
+@media (max-width: 1110px) {
+    .container {
+        width: auto;
+    }
+}
+
+@media (max-width: 1894px){
+    header{
+        padding: 20px 270px;
+        width: 72%;
+    }
+    main{
+        padding: 20px 270px;
+    }
+}
+
+@media (max-width: 1794px){
+    header{
+        padding: 20px 170px;
+        width: 81%;
+    }
+    main{
+        padding: 20px 170px;
+    }
+}
+
+@media (max-width: 1694px){
+    header{
+        padding: 20px 70px;
+        width: 92%;
+    }
+    main{
+        padding: 20px 70px;
+    }
+}
+
+@media (max-width: 1294px){
+    header{
+        padding: 20px 70px;
+        width: 90%;
+    }
+}
+
+@media (max-width: 940px){
+    header{
+        padding: 20px 70px;
+        width: 85%;
+    }
+}
+
+@media (max-width: 862px){
+    footer{
+        padding: 50px 0px;
+    }
+}
+
+@media (max-width: 768px){
+    .burger {
+        display: flex;
+    }
+
+    .menu, .icons{
+        display: none;
+        flex-direction: column;
+        background-color: rgba(255, 255, 255, 0);
+        padding: 20px;
+    }
+    .up{
+        flex-direction: column;
+        align-items: start;
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 704px){
+    .product{
+        width: 240px;
+        height: 240px;
+    }
+    .cards{
+        margin-left: 40px;
+    }
+}
+
+@media (max-width: 684px){
+    .product{
+        width: 220px;
+        height: 220px;
+    }
+    .cards{
+        margin-left: 25px;
+    }
+}
+
+@media (max-width: 668px){
+    header{
+        width: 80%;
+    }
+    .product{
+        width: 210px;
+        height: 210px;
+    }
+    .cards{
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 530px){
+    header{
+        width: 80%;
+    }
+}
+
+@media (max-width: 455px){
+    .text{
+        width: 300px;
+    }
+    .input{
+        display: flex;
+        flex-direction: column;
+        gap: 5px 0px;
+    }
+    header{
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .burger{
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 400px){
+    header {
+        width: 65%;
+    }
+}
+
+@media (max-width: 380px){
+    header {
+        width: 65%;
+    }
+}
+
+@media (max-width: 320px){
+    header {
+        width: 60%;
+    }
+    main{
+        padding: 20px 20px;
+    }
+    .cards{
+        align-items: center;
+        text-align: end;
+        justify-content: center;
+    }
+    .text{
+        width: 300px;
+    }
+}
